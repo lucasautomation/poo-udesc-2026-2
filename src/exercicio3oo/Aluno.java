@@ -36,35 +36,20 @@ public Aluno (String matricula, String nome, int idade, int nota1, int nota2, in
     public void setIdade(int idade){this.idade = idade;}
 
     public void setNota1(int nota1) {
-        if (nota1 >= 0 && nota1 <= 10) {
-            this.nota1 = nota1;
-        } else {
-            System.out.println("Nota 1 inválida! Deve estar entre 0 e 10.");
-        }
+        if (nota1 >= 0 && nota1 <= 10) {this.nota1 = nota1;}
+        else {System.out.println("Nota 1 inválida! Deve estar entre 0 e 10.");}
     }
-
     public void setNota2(int nota2) {
-        if (nota2 >= 0 && nota2 <= 10) {
-            this.nota2 = nota2;
-        } else {
-            System.out.println("Nota 2 inválida! Deve estar entre 0 e 10.");
-        }
+        if (nota2 >= 0 && nota2 <= 10) {this.nota2 = nota2;}
+        else {System.out.println("Nota 2 inválida! Deve estar entre 0 e 10.");}
     }
-
     public void setNota3(int nota3) {
-        if (nota3 >= 0 && nota3 <= 10) {
-            this.nota3 = nota3;
-        } else {
-            System.out.println("Nota 3 inválida! Deve estar entre 0 e 10.");
-        }
+        if (nota3 >= 0 && nota3 <= 10) {this.nota3 = nota3;}
+        else {System.out.println("Nota 3 inválida! Deve estar entre 0 e 10.");}
     }
-
     public void setNota4(int nota4) {
-        if (nota4 >= 0 && nota4 <= 10) {
-            this.nota4 = nota4;
-        } else {
-            System.out.println("Nota 4 inválida! Deve estar entre 0 e 10.");
-        }
+        if (nota4 >= 0 && nota4 <= 10) {this.nota4 = nota4;}
+        else {System.out.println("Nota 4 inválida! Deve estar entre 0 e 10.");}
     }
 
     //Metodo toString

@@ -6,6 +6,6 @@ public class TesteRetangulo {
 
         System.out.printf("A Medida da largura é: %.2f%n", retangulo.getLargura());
         System.out.printf("A Medida da altura é: %.2f%n", retangulo.getAltura());
-        System.out.println("A medida");
+        System.out.println(retangulo);
     }
 }
