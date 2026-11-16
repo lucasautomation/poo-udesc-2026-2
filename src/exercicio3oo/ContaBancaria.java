@@ -8,7 +8,7 @@ public class ContaBancaria {
         System.out.println("...");
         this.numeroconta = numeroconta;
         this.titular = titular;
-        this.saldo = saldo;
+        setSaldo (saldo);
     }
     //getters públicos
     public double getSaldo() {return this.saldo;}
@@ -17,15 +17,21 @@ public class ContaBancaria {
 
     //setters públicos
     public void setNumeroconta(String numeroconta) {this.numeroconta = numeroconta;}
-    public void setSaldo(double saldo) {this.saldo = saldo;}
+    public void setSaldo(double saldo) {
+        if (saldo >= 0) {
+            this.saldo = saldo;
+        } else {
+            System.out.println("Saldo negativo");
+        }
+    }
     public void setTitular(String titular) {this.titular = titular;}
 
     //Metodo toString
 
     @Override
     public String toString() {return
-            "Número da conta é: %.2f%n " + this.numeroconta +
-                    "Nome do titular: " + this.titular +
-                    "Saldo da conta: " + this.saldo;
+            "Número da conta é: " + this.numeroconta +
+                    ", Nome do titular: " + this.titular +
+                    ", Saldo da conta: " + this.saldo;
     }
 }
