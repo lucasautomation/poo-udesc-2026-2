@@ -36,4 +36,20 @@ public Aluno (String matricula, String nome, int idade, int nota1, int nota2, in
     public void setNota2(int nota2){this.nota2 = nota2;}
     public void setNota3(int nota3){this.nota3 = nota3;}
     public void setNota4(int nota4){this.nota4 = nota4;}
+
+    //Metodo toString
+    @Override
+    public String toString(){
+        return "Nome do aluno: " + this.nome +
+                ", [Matricula: " + this.matricula +
+                ", Idade do aluno: " + this.idade +
+                ", Nota 1: " + this.nota1 +
+                ", Nota 2: " + this.nota2 +
+                ", Nota 4: " + this.nota3 +
+                ", Nota 3: " + this.nota4 + "]";
+
+
+}
+
+
 }
