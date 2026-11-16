@@ -22,4 +22,12 @@ public Livro (String Titulo, String Autor, String Genero, Boolean Emprestado){
     public void setAutor(String Autor) {this.Autor = Autor;}
     public void setGenero(String Genero){this.Genero = Genero;}
     public void setEmprestado(Boolean Emprestado){this.Emprestado = Emprestado;}
+
+    @Override
+    public String toString(){
+        return "Título do Livro:" + this.Titulo +
+                ", Gênero: " + this.Genero +
+                ", Autor: " + this.Autor +
+                ", Status do empréstimo: " + this.Emprestado;
+    }
 }

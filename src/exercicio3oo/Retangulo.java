@@ -16,4 +16,13 @@ public class Retangulo {
     //setters públicos
     public void setAltura(double altura) {this.altura = altura;}
     public void setLargura(double largura) {this.largura = largura;}
+
+    //Metodo toString
+    @Override
+    public String toString () {
+        return "Largura = " + this.largura +
+                ", Altura = " + this.altura;
+
+
+    }
 }

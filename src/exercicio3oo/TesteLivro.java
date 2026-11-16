@@ -8,5 +8,6 @@ public class TesteLivro {
         System.out.printf("O gênero é: %s%n ", livro.getGenero());
         System.out.printf("O título é: %s%n", livro.getTitulo());
         System.out.printf("Empréstimo: %b%n", livro.getEmprestado());
+        System.out.println(livro);
     }
 }

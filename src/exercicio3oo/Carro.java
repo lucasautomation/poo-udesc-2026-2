@@ -15,7 +15,7 @@ public class Carro {
     }
     //setter publicos
     public String getModelo() {return this.modelo;}
-    public String getMarca(){return this.modelo;}
+    public String getMarca(){return this.marca;}
     public int getAno() {return this.ano;}
     public double getVelocidade() {return this.velocidade;}
 
@@ -24,4 +24,12 @@ public class Carro {
     public void setMarca(String marca) {this.marca = marca;}
     public void setAno(int ano) {this.ano = ano;}
     public void setVelocidade(double velocidade) {this.velocidade = velocidade;}
+
+    @Override
+    public String toString(){
+        return "Modelo du carro: " + this.modelo +
+                ", Marca du carro é " + this.marca +
+                ", Ano de fabricação:" + this.ano +
+                ", Velocidade máxxima: " + this.velocidade;
+    }
 }

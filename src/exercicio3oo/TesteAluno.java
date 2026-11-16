@@ -13,5 +13,6 @@ public class TesteAluno {
         System.out.printf("nota2: %d%n ", aluno.getNota2());
         System.out.printf("nota3: %d%n ", aluno.getNota3());
         System.out.printf("nota4: %d%n ", aluno.getNota4());
+        System.out.println(aluno);
     }
 }

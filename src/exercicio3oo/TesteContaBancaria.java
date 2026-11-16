@@ -7,6 +7,6 @@ public class TesteContaBancaria {
         System.out.printf("O número da conta é: %s%n", contabancaria.getNumeroconta());
         System.out.printf("O titular da conta é %s%n", contabancaria.getTitular());
         System.out.printf("O saldo disponível é: %b%n", contabancaria.getSaldo());
-
+        System.out.println(contabancaria);
     }
 }

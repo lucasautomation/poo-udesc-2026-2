@@ -7,6 +7,8 @@ public class TesteCarro {
         System.out.printf("Modelo do carro: %s%n", carro.getModelo());
         System.out.printf("Marca: %s%n ", carro.getMarca());
         System.out.printf("Ano do carro: %d%n", carro.getAno());
-        System.out.printf("Velocidade máxima: %b%n ", carro.getVelocidade());
+        System.out.printf("Velocidade máxima: %.1f%n ", carro.getVelocidade());
+        System.out.println(carro);
     }
+
 }

@@ -9,6 +9,7 @@ public class Aluno {
     private int nota3;
     private int nota4;
 
+
 public Aluno (String matricula, String nome, int idade, int nota1, int nota2, int nota3, int nota4){
     System.out.println("...");
     this.nome = nome;
@@ -18,6 +19,7 @@ public Aluno (String matricula, String nome, int idade, int nota1, int nota2, in
     this.nota2 = nota2;
     this.nota3 = nota3;
     this.nota4 = nota4;
+
     }
     //Getters públicos
     public String getMatricula(){return this.matricula;}
@@ -32,10 +34,38 @@ public Aluno (String matricula, String nome, int idade, int nota1, int nota2, in
     public void setMatricula(String matricula) {this.matricula = matricula;}
     public void setNome(String nome) {this.nome = nome;}
     public void setIdade(int idade){this.idade = idade;}
-    public void setNota1(int nota1){this.nota1 = nota1;}
-    public void setNota2(int nota2){this.nota2 = nota2;}
-    public void setNota3(int nota3){this.nota3 = nota3;}
-    public void setNota4(int nota4){this.nota4 = nota4;}
+
+    public void setNota1(int nota1) {
+        if (nota1 >= 0 && nota1 <= 10) {
+            this.nota1 = nota1;
+        } else {
+            System.out.println("Nota 1 inválida! Deve estar entre 0 e 10.");
+        }
+    }
+
+    public void setNota2(int nota2) {
+        if (nota2 >= 0 && nota2 <= 10) {
+            this.nota2 = nota2;
+        } else {
+            System.out.println("Nota 2 inválida! Deve estar entre 0 e 10.");
+        }
+    }
+
+    public void setNota3(int nota3) {
+        if (nota3 >= 0 && nota3 <= 10) {
+            this.nota3 = nota3;
+        } else {
+            System.out.println("Nota 3 inválida! Deve estar entre 0 e 10.");
+        }
+    }
+
+    public void setNota4(int nota4) {
+        if (nota4 >= 0 && nota4 <= 10) {
+            this.nota4 = nota4;
+        } else {
+            System.out.println("Nota 4 inválida! Deve estar entre 0 e 10.");
+        }
+    }
 
     //Metodo toString
     @Override
@@ -47,9 +77,5 @@ public Aluno (String matricula, String nome, int idade, int nota1, int nota2, in
                 ", Nota 2: " + this.nota2 +
                 ", Nota 4: " + this.nota3 +
                 ", Nota 3: " + this.nota4 + "]";
-
-
-}
-
-
+    }
 }
