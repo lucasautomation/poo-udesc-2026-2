@@ -11,7 +11,7 @@ public Livro (String Titulo, String Autor, String Genero, Boolean Emprestado){
     this.Titulo = Titulo;
     this.Autor = Autor;
     this.Genero = Genero;
-    this.Emprestado = Emprestado;
+    setEmprestado(Emprestado);
     }
     public String getTitulo() {return this.Titulo;}
     public String getAutor(){return this.Autor;}
@@ -21,8 +21,14 @@ public Livro (String Titulo, String Autor, String Genero, Boolean Emprestado){
     public void setTitulo(String Titulo){this.Titulo=Titulo;}
     public void setAutor(String Autor) {this.Autor = Autor;}
     public void setGenero(String Genero){this.Genero = Genero;}
-    public void setEmprestado(Boolean Emprestado){this.Emprestado = Emprestado;}
-
+    public void setEmprestado(Boolean Emprestado) {
+        if (Emprestado == false) {
+            this.Emprestado = Emprestado;
+            System.out.println("Livro pronto para empréstimo");
+        } else {
+            System.out.println("Livro indisponível");
+        }
+    }
     @Override
     public String toString(){
         return "Título do Livro:" + this.Titulo +
