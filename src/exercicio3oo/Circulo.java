@@ -4,7 +4,7 @@ public class Circulo {
     private double raio;
 
     public Circulo(Double raio){
-        System.out.println("...");
+        System.out.println(".....");
         this.raio = raio;
     }
     //getters públicos
