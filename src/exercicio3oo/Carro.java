@@ -11,7 +11,7 @@ public class Carro {
         this.modelo = modelo;
         this.marca = marca;
         this.ano = ano;
-        this.velocidade = velocidade;
+        setVelocidade(velocidade);
     }
     //setter publicos
     public String getModelo() {return this.modelo;}
@@ -23,8 +23,22 @@ public class Carro {
     public void setModelo(String modelo) {this.modelo = modelo;}
     public void setMarca(String marca) {this.marca = marca;}
     public void setAno(int ano) {this.ano = ano;}
-    public void setVelocidade(double velocidade) {this.velocidade = velocidade;}
-
+    public void setVelocidade(double velocidade) {
+        if(velocidade >= 0 && velocidade <=300){
+            {this.velocidade = velocidade;}
+        }
+        else{System.out.println("Fora da faixa de velocidade permitida!");}
+        }
+    public void acelerar(double incremento) {
+        if (incremento <= 0 || (this.velocidade + incremento) > 300) {
+            System.out.println("Erro de aceleração - ultrapassa 300 km/h!");
+        } else {this.velocidade += incremento;}
+    }
+    public void frear(double decremento) {
+        if (decremento <= 0 || (this.velocidade - decremento) < 0) {
+            System.out.println("Erro de freio -velocidade ficaria negativa!");
+        } else {this.velocidade -= decremento;}
+    }
     @Override
     public String toString(){
         return "Modelo du carro: " + this.modelo +
